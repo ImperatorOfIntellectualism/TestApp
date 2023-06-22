@@ -1,0 +1,144 @@
+.container{
+  .background{
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0.2;
+  }
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background: #E5E5E5;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  .textBox{
+    text-align: left;
+    position: absolute;
+    display:flex;
+    flex-direction: row;
+    left: 20%;
+    top: 10%;
+    width: 300px;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    color: #42567A;
+    img{
+      height: 150px;
+      margin-right: 10px;
+    }
+  }
+  .circleContainer{
+    z-index: 2;
+    height: 340px;
+    width: 670px;
+    .circle{
+      height: 100%;
+      width: 100%;
+      opacity: 0.2;
+    }
+  }
+  .dateBox{
+    z-index: 2;
+    position: absolute;
+    width: 600px;
+    left: 30%;
+    top: 40%;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 160px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #5D5FEF;
+  }
+  .bottomS {
+    top: 75%;
+    position: absolute;
+    width: 600px;
+    height: 150px;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 12px;
+    background: #E5E5E5;
+    z-index: 1;
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      font-size: 16px;
+    }
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .middleNBox{
+    top: 57%;
+    left: 17%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    background: #E5E5E5;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .middleSBox{
+    top: 60%;
+    left: 10%;
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background: #E5E5E5;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+  }
+  .slideButton:hover{
+      cursor: pointer;
+  }
+  .number{
+    top: 31%;
+    left: 55%; 
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    color: #42567A;
+    font-size: 25px;
+    font-family: 'PT Sans';
+    @media (max-width: 1300px) {
+      left: 56%; 
+    }
+    @media (max-width: 1000px) {
+      left: 58%; 
+    }
+    @media (max-width: 800px) {
+      left: 60%; 
+    }
+  }
+}
